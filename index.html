@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 
 <body class="layout">
@@ -18,7 +19,72 @@
         <a href="#activites">Activités</a>
     </header>
     <!-- Main -->
-    <section id="main">main</section>
+    <section id="main">
+        <div class="title-m">
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre ville ou en pleine nature</p>
+        </div>
+        <form class="bar-search" action="">
+            <span class="icon-m">
+                <i class="fas fa-map-marker-alt"></i>
+            </span>
+            <input type="text" name="text-search" placeholder="Marseille, France">
+            <button class="btn-search" title="search" type="submit">
+                <span class="btn-search-text">Rechercher</span>
+                <span class="btn-search-icon">
+                    <i class="fas fa-search"></i>
+                </span>
+            </button>
+        </form>
+        <div class="bar-filters">
+            <p>Filtres</p>
+            <button class="btn-filters">
+                <span class="btn-filters-icon fa-stack">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-money-bill-wave fa-stack-1x"></i>
+                </span>
+                <span class="btn-filters-text">
+                    &nbsp; &Eacute;conomique
+                </span>
+            </button>
+            <button class="btn-filters">
+                <span class="btn-filters-icon fa-stack">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-child fa-stack-1x"></i>
+                </span>
+                <span class="btn-filters-text">
+                    &nbsp; Familial
+                </span>
+            </button>
+            <button class="btn-filters">
+                <span class="btn-filters-icon fa-stack">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-heart fa-stack-1x"></i>
+                </span>
+                <span class="btn-filters-text">
+                    &nbsp; Romantique                    
+                </span>
+            </button>
+            <button class="btn-filters">
+                <span class="btn-filters-icon fa-stack">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-dog fa-stack-1x"></i>
+                </span>
+                <span class="btn-filters-text">
+                    &nbsp; Animaux autorisés   
+                </span>
+            </button>
+        </div>
+        <div class="info-m">
+            <span class="info-icon fa-stack">
+                <i class="far fa-circle fa-stack-2x"></i>
+                <i class="fa fa-info fa-stack-1x"></i>
+            </span>
+            <p>
+                Plus de 500 logements sont disponibles dans cette ville
+            </p>
+        </div>
+    </section>
     <!-- Populaires -->
     <section id="populaires">
         <div class="titre-p">
