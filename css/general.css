@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    color: initial;
+}
+/********************/
+/* HEADER */
+/********************/
+header {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+header > * {
+    width: 50%;
+    padding: 0 6vw;
+}
+header :nth-child(2) {
+    color: var(--primary-color);
+    font-weight: 800;
+    text-align: end;
+}
+header :nth-child(n+3) {
+    text-align: center;
+    border-bottom: 3px solid white;
+    padding: 8px 6vw;
+}
+header :nth-child(n+3):hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+/********************/
+/* MAIN */
+/********************/
+#main {
+    display: flex;
+    flex-direction: column;
+    gap: var(--section-spacing);
+    padding: 0 6vw;
+}
+/* SEARCH */
+.bar-search {
+    display: flex;
+    flex-direction: row;
+    border-radius: 16px;
+    overflow: hidden;
+}
+.bar-search > * {
+    padding: 6px;
+    border: none;
+}
+.btn-map-icon {
+    background-color: var(--tertiary-color);
+}
+.btn-search {
+    background-color: var(--primary-color);
+    border-radius: 16px;
+}
+.btn-map-icon, .btn-search {
+    aspect-ratio: 1/1;
+    height: var(--search-icon);
+    text-align: center;
+}
+.fa-map-marker-alt {
+    position: relative;
+    top: 25%;
+}
+[name*='text-search'] {
+    flex: 1 1 auto;
+    border-bottom: 2px solid var(--tertiary-color);
+    border-top: 2px solid var(--tertiary-color);
+    font-weight: 700;
+}
+.btn-search-text {
+    display: none;
+}
+.btn-search * {
+    color: white;
+}
+/* FILTERS */
+.bar-filters {
+    display: flex;
+    flex-flow: row wrap;
+    gap: var(--internal-spacing);
+}
+.bar-filters * {
+    font-weight: 700;
+}
+.bar-filters > :nth-child(1) {
+    width: 100%;
+}
+.btn-filters {
+    border-radius: var(--filters-icon);
+    border-color: var(--tertiary-color);
+    font-size: var(--filters-icon);
+}
+.btn-filters:hover {
+    background-color: var(--primary-color);
+}
+[class*="filters-icon"] {
+    aspect-ratio: 1/1;
+    width: auto;
+}
+.btn-filters-icon > .fa-circle {
+    color: var(--secondary-color);
+}
+.btn-filters-icon > :nth-child(2) {
+    color: var(--primary-color);
+}
+.btn-filters-text {
+    padding: 8px;
+}
+/* INFO */
+.info {
+    font-size: small;
+    display: flex;
+    gap: var(--internal-spacing);
+}
+.info .fa-circle {
+    color: var(--tertiary-color);
+}
+.info .fa-info {
+    color: var(--primary-color);
+}
+/********************/
+/* POPULAIRES */
+/********************/
+#populaires {
+    padding: 0 6vw;
+    background-color: var(--tertiary-color);
+    display: flex;
+    flex-direction: column;
+    gap: var(--section-spacing);
+}
+#populaires > * {
+    max-width: 320px;
+}
+.title-p {
+    display: flex;
+    align-items: center;
+}
+.title-p > h2 {
+    margin-right: auto;
+}
+.gallery-p {
+    display: grid;
+    grid-template-columns: repeat(var(--numb-card-p), minmax(auto, var(--width-card-p)));
+    grid-auto-rows: var(--height-card-p);
+    gap: var(--gallery-spacing);
+}
+.gallery-p .card-container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    background-color: white;
+    border: 4px solid white;
+    border-radius: 16px;
+    overflow: hidden;
+}
+.gallery-p .card-img {
+    aspect-ratio: 1/1;
+    height: auto;
+    object-fit: cover;
+}
+.gallery-p .card-description {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card-description > .card-title {
+    font-weight: 700;
+    font-size: 16px;
+}
+.card-description > p {
+    font-size: 12px;
+}
+.card-description .card-price {
+    font-weight: 700;
+}
+.card-rating > i {
+    color: #f2f2f2;
+    font-size: small;
+}
+.h_1 :nth-child(-n+5),
+.h_2 :nth-child(-n+4),
+.h_3 :nth-child(-n+4) {
+    color: var(--primary-color);
+}
