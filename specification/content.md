@@ -20,6 +20,20 @@ Plus de 500 logements sont disponibles dans cette ville
 
 ====================================================================
 
+Les plus populaires
+
+
+Hôtel Le soleil du matin
+Nuit à partir de 128€
+
+Au coeur de l'eau Chambres d'hôtes
+Nuit à partir de 71€
+
+Hôtel Tout bleu et blanc
+Nuit à partir de 68€
+
+====================================================================
+
 Hébergements à Marseille
 
 
@@ -42,20 +56,6 @@ Hôtel chez Amina
 Nuit à partir de 96€
 
 Afficher plus
-
-====================================================================
-
-Les plus populaires
-
-
-Hôtel Le soleil du matin
-Nuit à partir de 128€
-
-Au coeur de l'eau Chambres d'hôtes
-Nuit à partir de 71€
-
-Hôtel Tout bleu et blanc
-Nuit à partir de 68€
 
 ====================================================================
 
