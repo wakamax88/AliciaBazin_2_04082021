@@ -26,6 +26,7 @@ header {
     flex-flow: row wrap;
     align-items: center;
     padding-top: 24px;
+    grid-area: header;
 }
 header > * {
     width: 50%;
@@ -53,6 +54,7 @@ header :nth-child(n+3):hover {
     flex-direction: column;
     gap: var(--section-spacing);
     padding: 0 6vw;
+    grid-area: main;
 }
 .title-m p {
     line-height: 1.8;
@@ -152,6 +154,7 @@ header :nth-child(n+3):hover {
     display: flex;
     flex-direction: column;
     gap: var(--section-spacing);
+    grid-area: populaires;
 }
 .title-p {
     display: flex;
@@ -167,7 +170,7 @@ header :nth-child(n+3):hover {
 .gallery-p {
     display: grid;
     grid-template-columns: repeat(var(--numb-card-p), minmax(auto, 100%));
-    grid-auto-rows: var(--height-card-p);
+    /*grid-auto-rows: var(--height-card-p);*/
     gap: var(--gallery-spacing);
 }
 .gallery-p .card-container {
@@ -218,7 +221,8 @@ header :nth-child(n+3):hover {
     background-color: var(--tertiary-color);
     display: flex;
     flex-direction: column;
-    gap: var(--section-spacing);
+    gap: 24px;
+    grid-area: hebergements;
 }
 .gallery-h {
     display: grid;
@@ -236,6 +240,7 @@ header :nth-child(n+3):hover {
     overflow: hidden;
 }
 .gallery-h .card-img {
+    width: 100%;
     aspect-ratio: 8/3;
     object-fit: cover;
 }
@@ -264,10 +269,11 @@ header :nth-child(n+3):hover {
     display: flex;
     flex-direction: column;
     gap: var(--section-spacing);
+    grid-area: activites;
 }
 .gallery-a {
     display: grid;
-    grid-template-columns: repeat(var(--numb-card-h), minmax(auto, 100%));
+    grid-template-columns: repeat(var(--numb-card-a), minmax(auto, 100%));
     /*grid-auto-rows: var(--height-card-h);*/
     gap: var(--gallery-spacing);
 }
@@ -280,6 +286,7 @@ header :nth-child(n+3):hover {
     overflow: hidden;
 }
 .gallery-a .card-img {
+    width: 100%;
     aspect-ratio: 2.5;
     object-fit: cover;
 }
@@ -297,6 +304,7 @@ footer {
     gap: 32px;
     padding-bottom: 24px;
     background-color: var(--tertiary-color);
+    grid-area: footer;
 }
 footer li {
     list-style: none;

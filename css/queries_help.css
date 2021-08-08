@@ -1,3 +1,9 @@
+html {
+    --numb-card-p: 1;
+    --numb-card-h: 1;
+    --numb-card-a: 1;
+    
+}
 body {
     background-color: grey;
 }
@@ -9,19 +15,97 @@ body {
 }
 
 @media screen and (min-width: 550px) {
+    html {
+        --numb-card-p: 2;
+        --numb-card-h: 2;
+        --numb-card-a: 2;
+    }
     body {
         background-color: yellow;
+    }
+    .info {
+        align-items: center;
+    }
+    .gallery-p {
+        grid-template-columns: repeat(var(--numb-card-p), 1fr);
+    }
+    .gallery-h {
+        grid-template-columns: repeat(var(--numb-card-h), 1fr);
+    }
+    .gallery-a {
+        grid-template-columns: repeat(var(--numb-card-a), 1fr); 
     }
 }
 
 @media screen and (min-width: 768px) {
+    html {
+        --numb-card-p: 3;
+        --numb-card-h: 3;
+        --numb-card-a: 3;
+    }
     body {
         background-color: orange;
+    }
+    header > * {
+        width: auto;
+    }
+    header :nth-child(1) {
+        margin-right: auto;
+    }
+    header :nth-child(n+3) {
+        text-align: center;
+        border-top: 3px solid white;
+        padding: 12px 6vw;
+        border-bottom: none;
+    }
+    header :nth-child(n+3):hover {
+        border-color: var(--primary-color);
+        color: var(--primary-color);
+    }
+    [name*='text-search'] {
+        flex: none;
     }
 }
 
 @media screen and (min-width: 960px) {
+    html {
+        --numb-card-h: 3;
+        --numb-card-p: 1;
+        --numb-card-a: 4;
+    }
     body {
         background-color: red;
+    }
+    .layout {
+        display: grid;
+        grid-template-columns: auto 2fr 1fr auto;
+        grid-template-areas: 
+                        ". header header ."
+                        ". main main ."
+                        ". hebergements populaires ."
+                        ". activites activites ."
+                        "footer footer footer footer";
+        grid-gap: 36px;
+    }
+    #hebergements, #populaires {
+        padding: 0 2vw;
+    }
+    .gallery-h {
+        row-gap: 36px;
+    }
+    .gallery-h .card-img {
+        aspect-ratio: 2;
+    }
+    .bar-filters {
+        align-items: center;
+    }
+    .bar-filters > :nth-child(1) {
+        width: auto;
+    }
+    .gallery-p {
+        gap: auto;
+    }
+    footer {
+        flex-direction: row;
     }
 }
