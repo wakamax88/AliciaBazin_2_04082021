@@ -10,12 +10,5 @@
     --internal-spacing: 8px;
     /*--Icon--*/
     --search-icon: 48px;
-    --filters-icon: 18px;
-    /*--Gallery--*/
-    --numb-card-p: 1;
-    --width-card-p: 320px;
-    --height-card-p: 140px;
-    --numb-card-h: 1;
-    --width-card-h: 320px;
-    --height-card-h: 200px;   
+    --filters-icon: 18px;  
 }
