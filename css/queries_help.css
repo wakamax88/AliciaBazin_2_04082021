@@ -4,14 +4,8 @@ html {
     --numb-card-a: 1;
     
 }
-body {
-    background-color: grey;
-}
 
 @media screen and (min-width: 320px) {
-    body {
-        background-color: green;
-    }
 }
 
 @media screen and (min-width: 550px) {
@@ -19,9 +13,6 @@ body {
         --numb-card-p: 2;
         --numb-card-h: 2;
         --numb-card-a: 2;
-    }
-    body {
-        background-color: yellow;
     }
     .info {
         align-items: center;
@@ -39,15 +30,19 @@ body {
 
 @media screen and (min-width: 768px) {
     html {
-        --numb-card-p: 3;
+        --numb-card-p: 2;
         --numb-card-h: 3;
         --numb-card-a: 3;
     }
-    body {
-        background-color: orange;
+    header {
+        padding: 0;
     }
     header > * {
+        line-height: 6;
         width: auto;
+    }
+    header :nth-child(2) {
+        order: 4;
     }
     header :nth-child(1) {
         margin-right: auto;
@@ -65,6 +60,16 @@ body {
     [name*='text-search'] {
         flex: none;
     }
+    .btn-search {
+        border-radius: 0 16px 16px 0;
+        aspect-ratio: auto;
+    }
+    .btn-search-text {
+        display: inline;
+    }
+    .btn-search-icon {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 960px) {
@@ -72,9 +77,6 @@ body {
         --numb-card-h: 3;
         --numb-card-p: 1;
         --numb-card-a: 4;
-    }
-    body {
-        background-color: red;
     }
     .layout {
         display: grid;
@@ -87,8 +89,12 @@ body {
                         "footer footer footer footer";
         grid-gap: 36px;
     }
+    header > * {
+        padding: 0;
+    }
     #hebergements, #populaires {
-        padding: 0 2vw;
+        border-radius: 24px;
+        padding: 2vw 2vw;
     }
     .gallery-h {
         row-gap: 36px;
@@ -105,7 +111,29 @@ body {
     .gallery-p {
         gap: auto;
     }
+    #activites, #main {
+        padding: 0;
+    }
+    .gallery-a {
+        grid-row-gap: 32px;
+        grid-column-gap: 42px;
+        grid-auto-flow: column;
+    }
+    .gallery-a .card-img {
+        aspect-ratio: 1.75;
+        flex: auto;
+    }
+    .gallery-a .card-link:nth-child(1) {
+        grid-row: 1 / span 2;
+    }
+    .gallery-a .card-link:nth-child(4) {
+        grid-row: 1 / span 2;
+    }
     footer {
+        padding: 48px;
         flex-direction: row;
+    }
+    footer > div {
+        flex: 1;
     }
 }

@@ -292,7 +292,6 @@ header :nth-child(n+3):hover {
 }
 .gallery-a .card-description {
     padding: 16px;
-    flex: 1;
 }
 /********************/
 /* FOOTER */
