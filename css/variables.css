@@ -5,10 +5,10 @@
     --tertiary-color: #f2f2f2;
     /*--Spacing--*/
     --layout-spacing: 32px;
-    --section-spacing: 24px;
-    --gallery-spacing: 12px;
-    --internal-spacing: 8px;
+    --section-spacing: 32px;
+    --gallery-spacing: 16px;
+    --internal-spacing: 12px;
     /*--Icon--*/
     --search-icon: 48px;
-    --filters-icon: 18px;  
+    --filters-icon: 24px;  
 }
