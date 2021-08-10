@@ -178,7 +178,7 @@ header :nth-child(n+3):hover {
 .gallery-p {
     display: grid;
     grid-template-columns: repeat(var(--numb-card-p), minmax(auto, 100%));
-    /*grid-auto-rows: var(--height-card-p);*/
+    grid-auto-rows: 1fr;
     gap: var(--gallery-spacing);
 }
 .gallery-p .card-container {
