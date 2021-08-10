@@ -237,6 +237,7 @@ header :nth-child(n+3):hover {
     grid-template-columns: repeat(var(--numb-card-h), minmax(auto, 100%));
     /*grid-auto-rows: var(--height-card-h);*/
     gap: var(--gallery-spacing);
+    margin-bottom: auto;
 }
 .gallery-h .card-container {
     display: flex;
@@ -299,7 +300,7 @@ header :nth-child(n+3):hover {
 }
 .gallery-a .card-img {
     width: 100%;
-    aspect-ratio: 2.5;
+    aspect-ratio: 5/2;
     object-fit: cover;
 }
 .gallery-a .card-description {

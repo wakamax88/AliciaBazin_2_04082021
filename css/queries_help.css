@@ -87,12 +87,13 @@ html {
                         ". hebergements populaires ."
                         ". activites activites ."
                         "footer footer footer footer";
-        grid-gap: 36px;
+        gap: 36px;
     }
     header > * {
         padding: 0;
     }
     #hebergements, #populaires {
+        background-color: var(--tertiary-color);
         border-radius: 24px;
         padding: 2vw 2vw;
     }
@@ -100,16 +101,13 @@ html {
         row-gap: 36px;
     }
     .gallery-h .card-img {
-        aspect-ratio: 2;
+        aspect-ratio: 4/2;
     }
     .bar-filters {
         align-items: center;
     }
     .bar-filters > :nth-child(1) {
         width: auto;
-    }
-    .gallery-p {
-        gap: auto;
     }
     #activites, #main {
         padding: 0;
@@ -120,7 +118,7 @@ html {
         grid-auto-flow: column;
     }
     .gallery-a .card-img {
-        aspect-ratio: 1.75;
+        aspect-ratio: 7/4;
         flex: auto;
     }
     .gallery-a .card-link:nth-child(1) {
