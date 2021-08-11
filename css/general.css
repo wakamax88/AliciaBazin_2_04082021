@@ -10,6 +10,11 @@
     font-weight: 400;
     color: initial;
 }
+html {
+    --numb-card-p: 1;
+    --numb-card-h: 1;
+    --numb-card-a: 1;
+}
 /********************/
 /* LAYOUT */
 /********************/
